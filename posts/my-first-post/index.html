@@ -79,16 +79,27 @@
         
         
         <div class="post-content">
-            <h1 id="这是第一篇blog">这是第一篇blog</h1>
-<blockquote>
-<p>测试一下效果</p>
-</blockquote>
-<h1 id="这里写一些内容">这里写一些内容</h1>
+            <h1 id="用rclone-挂载-a1p-版的-onedrive">用rclone 挂载 a1p 版的 onedrive</h1>
+<h2 id="成功的rclone-配置文件">成功的Rclone 配置文件</h2>
+<pre tabindex="0"><code class="language-rclone-config" data-lang="rclone-config">[ConfigName]
+type = webdav
+url = https://[domain-pre]-my.sharepoint.com/personal/[full-domain]/Documents
+vendor = sharepoint
+user = Your-Email
+pass = Your-Password
+</code></pre><h2 id="url获取">URL获取</h2>
 <ul>
-<li>内容一</li>
-<li>内容2</li>
-<li>内容3</li>
+<li>通过网页登陆Onedrive</li>
+<li>登陆完成之后，文件管理界面复制地址栏的网址
+<ul>
+<li>保留<code>https://[domain-pre]-my.sharepoint.com/personal/[full-domain]/</code>部分</li>
+<li>在后面加上<code>/Documents</code></li>
 </ul>
+</li>
+</ul>
+<p>
+        <img class="mx-auto" alt="image-20230130215036062" src="https://static.lfo.cc/picgo/2023/01/202301302150418.png" />   
+    </p>
 
         </div>
 
